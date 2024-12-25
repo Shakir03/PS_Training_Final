@@ -1,0 +1,18 @@
+@use "../../styles/variables.scss" as *;
+
+.filter-container {
+    padding: 0px 0px 0px 0px;
+
+    .filter-wrap {
+        @include flex-row(flex-start, space-between);
+        padding-top: 22px;
+    }
+
+    .filter-row-wrap {
+        width: 100%;
+    }
+}
+
+.pokemon-search-filter {
+    background-color: $input-background;
+}

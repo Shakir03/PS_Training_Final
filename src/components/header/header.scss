@@ -1,0 +1,13 @@
+@use "../../styles/variables.scss" as *;
+
+
+.header {
+  height: var(--header-height);
+  padding: 0px;
+  @include flex-row(center, start);
+  font-weight: 600;
+  z-index: 2;
+  top: 0;
+  //   position: fixed;
+  width: 100%;
+}

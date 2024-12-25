@@ -1,0 +1,118 @@
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 767px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1800px,
+);
+
+
+
+// Custom variables
+$color: #333333;
+$bg-color: #DEEDED;
+$input-background: #C9DDE2;
+$bg-popover: #2E3156;
+$line-color: #5D5F7E;
+$primary-text-color: #2E3156;
+$primary: #FE414D;
+$link-color: $color;
+$link-decoration: underline;
+$link-hover-color: $primary;
+$body-color: $color;
+$dropdown-link-hover-color: $primary;
+
+//Colors
+$white: #fff;
+$ps-green: #6FCF97;
+$ps-blue: #079FFF;
+$ps-gray: #B4B4B4;
+$reject-bg: #EB5757;
+
+$heading: (
+  font-size: 36px
+);
+$heading-2: (
+  font-size: 34px
+);
+$heading-3: (
+  font-size: 32px
+);
+$heading-4: (
+  font-size: 30px
+);
+$heading-5: (
+  font-size: 28px
+);
+$heading-6: (
+  font-size: 20px
+);
+
+
+
+@mixin flex-col($alignItem: center, $justifyContent: center) {
+  display: flex;
+  align-items: $alignItem;
+  justify-content: $justifyContent;
+  flex-direction: column;
+}
+
+@mixin flex-row($alignItem: center, $justifyContent: center) {
+  display: flex;
+  align-items: $alignItem;
+  justify-content: $justifyContent;
+}
+
+
+@mixin sm{
+    @media (max-width: map-get($breakpoints, "sm")){
+        @content
+    }
+};
+
+// Small devices (landscape phones, less than 768px)
+@mixin md{
+    @media (max-width: map-get($breakpoints, "md")){
+        @content
+    }
+};
+
+// Medium devices (tablets, less than 992px)
+@mixin lg{
+    @media (max-width: map-get($breakpoints, "lg")){
+        @content
+    }
+};
+
+// Large devices (desktops, less than 1200px)
+@mixin xl{
+    @media (max-width: map-get($breakpoints, "xl")){
+        @content
+    }
+};
+
+// X-Large devices ( desktops, less than 1400px)
+@mixin xxl{
+    @media (max-width: map-get($breakpoints, "xxl")){
+        @content
+    }
+};
+
+// X-Large devices (large desktops, less than 1800px)
+@mixin xxxl{
+    @media (max-width: map-get($breakpoints, "xxxl")){
+        @content
+    }
+};
+
+@mixin mix{
+    @media (min-width: map-get($breakpoints, "xs")) and (max-width: map-get($breakpoints, "lg")) {
+        @content
+    }
+};
+
+@mixin phone-tablet($breakpoints){
+    @media (min-width: $sm) and (max-width: $lg) { @content }
+};

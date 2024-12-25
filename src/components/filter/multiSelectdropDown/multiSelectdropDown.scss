@@ -1,0 +1,51 @@
+@use "../../../styles/variables.scss" as *;
+
+.multiselect-dropdown-wrapper {
+    .check-picker-wrap {
+        width: 100%;
+    }
+
+    .dropdown-label {
+        padding-bottom: 6px;
+    }
+
+    .is-dropdown-open {
+
+        .rs-picker-toggle.rs-btn.rs-btn-default.rs-btn-lg {
+            background-color: $white  !important;
+        }
+    }
+
+    .rs-picker-toggle.rs-btn.rs-btn-default.rs-btn-lg {
+        background-color: $input-background  !important;
+    }
+
+    .rs-picker-toggle-value {
+        color: $primary-text-color;
+    }
+
+    .rs-picker-value-count {
+        background-color: $primary-text-color;
+    }
+
+    .rs-picker-value-item {
+        color: $primary-text-color;
+    }
+
+}
+
+.rs-picker .rs-picker-check .rs-picker-default .rs-picker-toggle-wrapper .rs-picker-cleanable .rs-picker-countable {
+    width: 100% !important;
+}
+
+.rs-checkbox-checked .rs-checkbox-wrapper .rs-checkbox-inner:before {
+    color: $white;
+    background-color: $primary-text-color;
+    border: 1px solid $primary-text-color;
+}
+
+.rs-picker-toggle-clean:hover {
+    color: $primary-text-color;
+    text-decoration: solid;
+    font-size: 13px;
+}

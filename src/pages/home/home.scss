@@ -1,0 +1,99 @@
+@use "../../styles/variables.scss" as *;
+
+.home-container {
+    padding: 16px 54px 0px 54px;
+
+    @include sm {
+        padding: 26px 22px 5px 22px;
+    }
+
+    // .hide {
+    //     @include sm {
+    //         display: none;
+    //     } 
+    // }
+
+    .app-header-wrap {
+        @include flex-row(center, center);
+
+        @include sm {
+            @include flex-col(flex-start, flex-start);
+        }
+    }
+
+    .no-data-found {
+        @include flex-row;
+        height: 300px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .header-title {
+        font-size: 20px;
+
+        h3 {
+            color: $primary-text-color;
+        }
+    }
+
+    .subheading {
+        font-size: 20px;
+        padding-left: 20px;
+
+        @include sm {
+            font-size: 18px;
+            padding-left: 0px;
+        }
+    }
+
+    .header-horizontal-line {
+        width: 1px;
+        height: 32px;
+        background-color: #5D5F7E;
+        margin: 22px;
+
+        @include sm {
+            width: 355px;
+            height: 1px;
+            background-color: #5D5F7E;
+            margin: 3px;
+            padding: 0px;
+
+        }
+    }
+
+    .card-list {
+        margin-top: calc(15px + var(--header-height));
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 44px;
+        padding: 42px 0px 22px 0px;
+
+        @include lg {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 38px
+        }
+
+        @include md {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 36px
+        }
+
+        @include sm {
+            grid-template-columns: 1fr 1fr;
+            gap: 34px
+        }
+    }
+
+    .loadmore-loader {
+        @include flex-row();
+    }
+
+    .load-more-wrap {
+        @include flex-row();
+
+        .rs-btn .rs-btn-link {
+            cursor: pointer;
+        }
+    }
+}

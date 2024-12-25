@@ -1,0 +1,22 @@
+@use "../../../styles/variables.scss" as *;
+
+.search-container {
+
+    .mb-1 {
+        margin-bottom: 10px;
+    }
+
+    .search-label {
+        padding-bottom: 6px;
+    }
+
+    .rs-input-group-focus {
+        width: 100%;
+
+        .rs-input:focus {
+            background-color: $white;
+        }
+
+
+    }
+}

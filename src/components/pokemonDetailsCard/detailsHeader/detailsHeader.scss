@@ -1,0 +1,52 @@
+@use "../../../styles/variables.scss" as *;
+@use "../../../styles/common.scss" as *;
+
+
+.details-header-container {
+
+    .header-wrap {
+        @include flex-row(flex-start, flex-start);
+        display: flex;
+        align-items: flex-start;
+        @include sm {
+            @include flex-col(center, center);
+        }
+    }
+
+    .header-sub-wrap {
+        @include flex-col(flex-start, space-between);
+        width: 100%;
+    }
+
+    .text-description {
+        padding-top: 30px;
+        font-size: 18px;
+    }
+
+    .title-wrap {
+        @include flex-row(center, space-between);
+        width: 100%;
+    }
+
+    .text-dot {
+        display: inline;
+    }
+
+    .load-more {
+        display: inline;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .icon-wrap {
+        @include flex-row(center, space-between);
+
+        img {
+            width: 38px;
+            height: 38px;
+            padding: 6px;
+            cursor: pointer;
+        }
+    }
+}

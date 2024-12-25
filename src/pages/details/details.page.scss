@@ -1,0 +1,32 @@
+@use '../../styles/variables.scss' as *;
+
+.details-modal-container {
+    background-color: $bg-color  !important;
+}
+
+.rs-modal-content {
+    background-color: $bg-color  !important;
+    padding: 41px;
+    @include sm {
+        padding: 12px;
+    }
+}
+
+.rs-modal-header-2 {
+    padding-right: 0px;
+}
+
+div#control-id-bottom {
+    background-color: $bg-popover;
+    width: 710px;
+    color: $white;
+
+    p {
+        font-size: 15px;
+    }
+
+}
+
+.padding-components {
+    padding-top: 38px;
+}

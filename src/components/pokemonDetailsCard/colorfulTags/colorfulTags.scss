@@ -1,0 +1,9 @@
+@use "../../../styles/variables.scss" as *;
+
+
+.colorful-tag {
+    border: 1px solid $primary-text-color;
+    border-radius: 5px;
+    padding: 2px 5px 2px 5px;
+    color: $primary-text-color;
+}
